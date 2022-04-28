@@ -1,140 +1,198 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
-        <div>
+        <header>
             <h1>Lorem ipsum magna faucibus curae</h1>
             <p>Lorem ipsum magna faucibus curae</p>
-        </div>
-        <div>
-            <form action="" autocomplete="on" method="dialog" target="_blank">
+        </header>
+        <main>
+            <form>
                 <div>
                     <label for="name">Nome</label>
                     <input 
-                    type="text" 
-                    id="name" 
-                    placeholder="James Bond"
-                    required
-                    size="40px"
-                    title="Igual está no seu CPF">
+                        type="text" 
+                        id="name" 
+                        name="name"
+                        placeholder="Coloque seu nome"
+                        required
+                        size="40"
+                        title="Igual está no seu CPF">
                 </div>
                 <div>
                     <label for="email">Email</label>
                     <input 
-                    type="email" 
-                    id="email"
-                    placeholder="james.bond@gmail.com"
-                    required
-                    size="40px"
-                    title="Não esqueça do @">
+                        type="email" 
+                        id="email"
+                        placeholder="Coloque seu Email"
+                        required
+                        name="email"
+                        size="40"
+                        title="Não esqueça do @">
                 </div>
                 <div>
                     <label for="age">Idade<span>(Opcional)</span></label>
                     <input 
-                    type="number" 
-                    name="" 
-                    id="age"
-                    size="40px"
-                    title="Não esqueça do @"
-                    min="11"
-                    >
+                        type="number" 
+                        name="age" 
+                        id="age"
+                        min="11"
+                        max="99"
+                        placeholder="Idade">
                 </div>
                 <div>
                     <label for="opcao_1">Qual opção melhor descreve </label>
-                    <select id="opcao_1">
-                        <option value="">op1</option>
-                        <option value="">op2</option>
-                        <option value="">op3</option>
-                        <option value="">op4</option>
-                        <option value="">op5</option>
+                    <select 
+                            id="opcao_1"  
+                            name="role" 
+                            size="1" 
+                            required>
+                        <option disabled selected value="">Selecione a opção</option>
+                        <option value="op1">op1</option>
+                        <option value="op2">op2</option>
+                        <option value="op3">op3</option>
+                        <option value="op4">op4</option>
+                        <option value="op5">op5</option>
                     </select>
                 </div>
                 <div>
                     <fieldset>
                         <legend>Would you recommend freeCodeCamp to a friend?</legend>
-                            <input type="radio" name="" id="radio_1">
-                            <label for="radio_1">op 1</label>
-                            <input type="radio" name="" id="radio_2">
-                            <label for="radio_2">op 2</label>
-                            <input type="radio" name="" id="radio_3">
-                            <label for="radio_3">op 3</label>
+                            <input 
+                                type="radio" 
+                                name="user-recommend" 
+                                id="radio_1" 
+                                value="op">
+                            <label for="radio_1">op</label>
+                            <input 
+                                type="radio" 
+                                name="user-recommend" 
+                                id="radio_2" 
+                                value="op">
+                            <label for="radio_2">op</label>
+                            <input 
+                                type="radio" 
+                                name="user-recommend" 
+                                id="radio_3" 
+                                value="op">
+                            <label for="radio_3">op</label>
                     </fieldset>
                 </div>
                 <div>
                     <label for="opcao_2">Qual opção melhor descreve </label>
-                    <select id="opcao_2">
-                        <option value="">abc</option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                    <select id="opcao_2" name="mostLike" required>
+                        <option value="">Lorem ipsum magna faucibus curae</option>
+                        <option value="">Lorem ipsum magna faucibus curae</option>
+                        <option value="">Lorem ipsum magna faucibus curae</option>
+                        <option value="">Lorem ipsum magna faucibus curae</option>
+                        <option value="">Lorem ipsum magna faucibus curae</option>
                     </select>
                 </div>
                 <div>
                     <fieldset>
-                        <legend></legend>
+                        <legend>Qual acessórios vc ...</legend>
                         <div>
-                            <input type="checkbox" name="" id="check_1">
-                            <label for="check_1"></label>
+                            <input 
+                                type="checkbox" 
+                                name="prefer" 
+                                id="check_1">
+                            <label for="check_1">Lorem ipsum magna faucibus curae</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="check_2">
-                            <label for="check_2"></label>
+                            <input 
+                                type="checkbox"
+                                name="prefer" 
+                                id="check_2">
+                            <label for="check_2">Lorem ipsum magna faucibus curae</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="check_3">
-                            <label for="check_3"></label>
+                            <input 
+                                type="checkbox" 
+                                name="prefer" 
+                                id="check_3">
+                            <label for="check_3">Lorem ipsum magna faucibus curae</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="check_4">
-                            <label for="check_4"></label>
+                            <input 
+                                type="checkbox" 
+                                name="prefer" 
+                                id="check_4">
+                            <label for="check_4">Lorem ipsum magna faucibus curae</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="check_5">
-                            <label for="check_5"></label>
+                            <input 
+                                type="checkbox" 
+                                name="prefer" 
+                                id="check_5">
+                            <label for="check_5">Lorem ipsum magna faucibus curae</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="check_6">
-                            <label for="check_6"></label>
+                            <input 
+                                type="checkbox" 
+                                name="prefer" 
+                                id="check_6">
+                            <label for="check_6">Lorem ipsum magna faucibus curae</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="check_7">
-                            <label for="check_7"></label>
+                            <input 
+                                type="checkbox" 
+                                name="prefer" 
+                                id="check_7">
+                            <label for="check_7">Lorem ipsum magna faucibus curae</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="check_8">
-                            <label for="check_8"></label>
+                            <input 
+                                type="checkbox" 
+                                name="prefer" 
+                                id="check_8">
+                            <label for="check_8">Lorem ipsum magna faucibus curae</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="check_9">
-                            <label for="check_9"></label>
+                            <input 
+                                type="checkbox" 
+                                name="prefer" 
+                                id="check_9">
+                            <label for="check_9">Lorem ipsum magna faucibus curae</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="check_10">
-                            <label for="check_10"></label>
+                            <input 
+                                type="checkbox" 
+                                name="prefer" 
+                                id="check_10">
+                            <label for="check_10">Lorem ipsum magna faucibus curae</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="check_11">
-                            <label for="check_11"></label>
+                            <input 
+                                type="checkbox" 
+                                name="prefer" 
+                                id="check_11">
+                            <label for="check_11">Lorem ipsum magna faucibus curae</label>
                         </div>
                     </fieldset>
                 </div>
                 <div>
-                    <label for="text_1">Any comments or suggestions?</label>
-                    <textarea name="" id="text_1" cols="30" rows="10"></textarea>
+                    <label for="text_1">Lorem ipsum magna faucibus curae??</label>
+                    <textarea 
+                        name="comment" 
+                        id="text_1"  
+                        placeholder="Escreva aqui">
+                    </textarea>
                 </div>
                 <div>
-                    <input type="submit" value="">
+                    <input 
+                        type="submit" 
+                        value="Enviar" 
+                        accesskey="s">
                 </div>
             </form>
-        </div>
+        </main>
     </div>
 
    
