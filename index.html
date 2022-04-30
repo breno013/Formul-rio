@@ -15,9 +15,9 @@
         </header>
         <main>
             <form>
-                <div class="titulo">
-                    <label for="name">Nome</label>
-                    <input 
+                <div>
+                    <label for="name" class="block">Nome</label>
+                    <input class="caixa"
                         type="text" 
                         id="name" 
                         name="name"
@@ -27,8 +27,8 @@
                         title="Igual está no seu CPF">
                 </div>
                 <div>
-                    <label for="email">Email</label>
-                    <input 
+                    <label for="email" class="block">Email</label>
+                    <input class="caixa"
                         type="email" 
                         id="email"
                         placeholder="Coloque seu Email"
@@ -38,8 +38,8 @@
                         title="Não esqueça do @">
                 </div>
                 <div>
-                    <label for="age">Idade<span>(Opcional)</span></label>
-                    <input 
+                    <label for="age" class="block">Idade<span>(opcional)</span></label>
+                    <input class="caixa"
                         type="number" 
                         name="age" 
                         id="age"
@@ -48,8 +48,8 @@
                         placeholder="Idade">
                 </div>
                 <div>
-                    <label for="opcao_1">Qual opção melhor descreve </label>
-                    <select 
+                    <label for="opcao_1" class="block">Qual opção melhor descreve </label>
+                    <select class="caixa"
                             id="opcao_1"  
                             name="role" 
                             size="1" 
@@ -65,29 +65,35 @@
                 <div>
                     <fieldset>
                         <legend>Would you recommend freeCodeCamp to a friend?</legend>
+                        <div>
                             <input 
                                 type="radio" 
                                 name="user-recommend" 
                                 id="radio_1" 
                                 value="op">
                             <label for="radio_1">op</label>
+                        </div>
+                        <div>
                             <input 
                                 type="radio" 
                                 name="user-recommend" 
                                 id="radio_2" 
                                 value="op">
                             <label for="radio_2">op</label>
+                        </div>
+                        <div>
                             <input 
                                 type="radio" 
                                 name="user-recommend" 
                                 id="radio_3" 
                                 value="op">
                             <label for="radio_3">op</label>
+                        </div>
                     </fieldset>
                 </div>
                 <div>
-                    <label for="opcao_2">Qual opção melhor descreve </label>
-                    <select id="opcao_2" name="mostLike" required>
+                    <label for="opcao_2" class="block">Qual opção melhor descreve </label>
+                    <select id="opcao_2" name="mostLike" required class="caixa">
                         <option value="">Lorem ipsum magna faucibus curae</option>
                         <option value="">Lorem ipsum magna faucibus curae</option>
                         <option value="">Lorem ipsum magna faucibus curae</option>
@@ -178,15 +184,14 @@
                     </fieldset>
                 </div>
                 <div>
-                    <label for="text_1">Lorem ipsum magna faucibus curae??</label>
-                    <textarea 
+                    <label for="text_1" class="block">Lorem ipsum magna faucibus curae??</label>
+                    <textarea class="caixa"
                         name="comment" 
                         id="text_1"  
-                        placeholder="Escreva aqui">
-                    </textarea>
+                        placeholder="Escreva aqui..."></textarea>
                 </div>
                 <div>
-                    <input 
+                    <input class="caixa" id="enviar"
                         type="submit" 
                         value="Enviar" 
                         accesskey="s">
